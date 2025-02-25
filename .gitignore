@@ -234,5 +234,9 @@ config.yaml
 *.swp
 learning/
 
+#Markdown
+*.md
+!README.md
+
 # Photoshop files (e.g., for image editing/demos)
 *.psd

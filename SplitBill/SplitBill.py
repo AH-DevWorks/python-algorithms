@@ -1,6 +1,4 @@
-# Write your code below this line 👇
-
-print("Welcome to the tip calculator!")
+print("\nWelcome to the SplitBill calculator!")
 
 total_bill = input("What was the total bill? $")
 while not (total_bill.replace(".", "", 1).isdigit() and float(total_bill) > 0):
@@ -19,4 +17,4 @@ number_of_people = int(number_of_people)
 
 each_should_pay = total_bill * (1 + tip_percentage / 100) / number_of_people
 
-print(f"Each person should pay: ${round(each_should_pay, 2):,}")
+print(f"\n-- Each person should pay: ${round(each_should_pay, 2):,} --")
