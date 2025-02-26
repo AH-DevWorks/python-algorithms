@@ -3,6 +3,7 @@
 ## 簡介
    + 這個倉庫（Repository）包含我在學習和實踐 Python 過程中的參考課程、資源、建立的各種基礎小型演算法專案以及成果等。
    + 這些專案都是基於線上課程中的教學內容進一步延伸、擴充而成，每個專案都展示了部份的 Python 概念和技術，反映我個人的學習和技能成長歷程。
+   + + 此倉庫集中於演算法／一般類型專案，遊戲類型專案請見另一倉庫: [python-mini-games](https://github.com/AH-DevWorks/python-mini-games)
 
 ## 課程參考
 + Udemy - [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
@@ -53,4 +54,4 @@
 
 
 *首次建立：[2025-02-25]*  
-*最後更新: [2025-02-25]*
+*最後更新: [2025-02-26]*
