@@ -3,7 +3,7 @@
 ## 簡介
    + 這個倉庫（Repository）包含我在學習和實踐 Python 過程中的參考課程、資源、建立的各種基礎小型演算法專案以及成果等。
    + 這些專案都是基於線上課程中的教學內容進一步延伸、擴充而成，每個專案都展示了部份的 Python 概念和技術，反映我個人的學習和技能成長歷程。
-   + + 此倉庫集中於演算法／一般類型專案，遊戲類型專案請見另一倉庫: [python-mini-games](https://github.com/AH-DevWorks/python-mini-games)
+   + 此倉庫集中於演算法／一般類型專案，遊戲類型專案請見另一倉庫: [python-mini-games](https://github.com/AH-DevWorks/python-mini-games)
 
 ## 課程參考
 + Udemy - [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
@@ -14,12 +14,30 @@
   + 學習機器學習的完整知識體系，從資料前處理、回歸、分類、聚類、關聯規則，到強化學習、自然語言處理、深度學習、降維與模型選擇等各個面向；透過 Python 和 R 的程式碼範本及案例，掌握構建並運用機器學習模型的能力
 + 線上資源 - [《Hello 演算法》](https://www.hello-algo.com/zh-hant/)
 
+
 ## 專案列表
 + 依完成日期排序（遞減）
 > 執行方式： 1. 下載或 clone 此倉庫； 2. 進入對應的資料夾，如：`cd "子資料夾名稱"`； 3. 在該資料夾中使用命令提示字元 (CMD) 或終端機執行 Python 檔案，如： `python (檔名).py`。
 >> 另可參考各專案資料夾內執行截圖檔案。
 
-1. [SplitBill](./SplitBill/)
+1. [Basic Calculator](./Basic%20Calculator)
+  + **基礎計算機**
+    + 可執行簡單的兩數四則運算（+ - × ÷）
+    + 能夠根據前次執行結果，進行下一次運算（例如首次運算得出結果"12"，可再用"12"進行下一輪運算）
+    + 防呆設計，避免無效輸入（如輸入非數字，或進行除法運算時除數為0等）
+  + **使用的主要技術/概念**
+    + 四則運算各自獨立為四組 functions，並以 dictionary 進行呼叫
+    + 在除法函式divide中預先進行除數（parameters - n2）「是否為0」的檢查，並提醒使用者
+    + 以 while loop 持續進行計算，直到使用者輸入非'y'(繼續計算)指令為止
+    + 將 try-except 數值檢查以獨立function呈現，提昇可讀性
+    + 開頭 import 一 ASCII Art 增加視覺豐富度
+  + 完成日期: *[2025-03-03]*
+  + <span style="color: darkorange">未來預計延伸/改進：</span>
+    + 因Python之 IEEE 754 浮點數規範，部份運算將導致小數點後出現大量位數。未來將改以decimal模組處理，避免浮點誤差
+    + 增添更多常用計算功能
+    + 儲存並且可依照使用者需求呼叫出前幾次計算的歷史紀錄
+
+2. [SplitBill](./SplitBill/)
   + **帳單分攤計算器**
     + 協助計算並分攤帳單（包含小費比例10% / 12% /15%）
     + 防呆設計，避免無效或複數輸入（如輸入非數字、輸入負值或輸入超出指定範圍外的小費比例）
@@ -33,7 +51,7 @@
     + 把程式變成網頁版 WEB 應用程式
     + 儲存金額計算的歷史紀錄
 
-2. [Theme Park Ticketing](./Theme%20Park%20Ticketing)
+3. [Theme Park Ticketing](./Theme%20Park%20Ticketing)
   + **遊樂園門票計算器**
     + 身高限制（120cm以上才可入園）
     + 依照年齡區分不同票價：11歲以下兒童$5｜12～18歲$7｜19歲以上$12
@@ -48,10 +66,10 @@
   + <span style="color: darkorange">未來預計延伸/改進：</span>
     + 強化身高 / 年齡驗證（限定範圍，避免不合理數值）
 
-3. [待持續更新]
+4. [待持續更新]
 
 
 
 
 *首次建立：[2025-02-25]*  
-*最後更新: [2025-02-26]*
+*最後更新: [2025-03-03]*
